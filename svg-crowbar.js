@@ -221,7 +221,7 @@
     }
 
     function processStyleSheet(ss) {
-      if (ss.cssRules) {
+      if (ss.hasOwnProperty('cssRules')) {
         for (var i = 0; i < ss.cssRules.length; i++) {
           var rule = ss.cssRules[i];
           if (rule.type === 3) {
